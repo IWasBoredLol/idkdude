@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <h1>404 Not Found</h1>
+    <p>Sorry, the page you're looking for doesn't exist.</p>
+
+    <script>
+        // You can make requests here, pretending the page doesn't work
+        fetch('https://raw.githubusercontent.com/your-username/your-repo/main/keygen.js')
+        .then(response => response.text())
+        .then(data => {
+            console.log("Script loaded:", data); // You could run JS code here to handle keys
+        })
+        .catch(err => console.error("Failed to load script:", err));
+    </script>
+</body>
+</html>
